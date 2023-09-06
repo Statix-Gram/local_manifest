@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- Remotes -->
+ <remote name="statix-gram" 
+         fetch="https://github.com/Statix-Gram" />
+ <remote name="cosmic-gitlab" 
+         fetch="https://gitlab.com/rayavanindra" />
+
+ <!-- Trees -->
+  
+ <!-- Device Tree -->
+ <project path="device/xiaomi/gram" 
+          name="device_xiaomi_gram.git" 
+          remote="statix-gram" 
+          revision="thirteen-statix" />
+ <!-- Common Tree -->
+ <project path="device/xiaomi/sm6250-common" 
+          name="device_xiaomi_sm6250-common.git" 
+          remote="statix-gram" 
+          revision="thirteen-statix-common" />
+ <!-- Vendor Tree -->
+ <project path="vendor/xiaomi/miatoll" 
+          name="vendor_xiaomi_miatoll.git" 
+          remote="statix-gram"
+          revision="thirteen-statix" />
+ <!-- Vendor Tree (Common) -->
+ <project path="vendor/xiaomi/sm6250-common" 
+          name="vendor_xiaomi_sm6250-common.git" 
+          remote="statix-gram"
+          revision="thirteen-statix-common" />
+ <!-- miuicamera -->
+ <project path="vendor/xiaomi/miuicamera" 
+          name="vendor_xiaomi_miuicamera.git" 
+          remote="cosmic-gitlab"
+          revision="leica" />
+
+</manifest>
